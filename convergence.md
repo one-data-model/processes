@@ -51,11 +51,14 @@ CST.
 
 1.  Models should have clear scope
 
-2.  Converged set should be as simple as possible while remaining useful
+2.  Models in the Converged set should be as simple as possible while remaining useful
     – too complex models are harder to re-use
+    
+    a.  and the converged set itself should be as simple as possible,
+        as well
 
 3.  Models must be defined in SDF – the model may have originated from
-    another format but supplied *model* is already translated.
+    another format but the supplied *model* is already translated.
 
 4.  Model stability is important – developers must be able to trust that
     the models remain consistent and stable. Evolution and versioning
@@ -97,7 +100,7 @@ the down selection process. The best practices are:
 
 -   reuse of common sdfProperties
 
-    -   This set of common sdfProperties will be gradually build up
+    -   This set of common sdfProperties will be gradually built up
         during the initial discussions
 
 # Acceptance process for new Models
@@ -235,3 +238,6 @@ Breaking changes will result in:
 
 6.  FWIW, terminology in this doc is **not** set in stone, feel free to
     suggest better terms
+
+7.  It would be nice if the different states led to different
+    abbreviations (converged CM vs. contributed CM)
