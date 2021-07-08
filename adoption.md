@@ -16,9 +16,11 @@ The intent of the repository is to create a place where good and widely re-usabl
 
 	- Model proponent: The individual promoting the model to the Review Board, as well as being the point of contact for all changes that need to be made to the model based on reviews and/or last call
 
-	- Review Board: The group responsible for reviewing incoming promoted models. Board membership based on representation of different ecosystems.
+	- Review Board: The group responsible for reviewing incoming promoted models. Board membership based on representation of different ecosystems. The review Board may, under its own discretion, bring in support from external experts for certain review tasks, such as alignment with specific ecosystems that is not currently on the Review Board. The size of the Review Board depends on how many ecosystems are participating, but should be at least 4-5 individuals, including a chair and a secretary
 
 	- Review Board Secretary: The Review Board individual who handles the paperwork for a particular model. Role is selected from Review Board members.
+	
+	- Review Board Chair: The Review Board individual, selected from Board members, who is task is to facilitate consensus within the group if needed. 
 
 - Consensus: A proposal is approved if no sustained relevant objection has been made in timely fashion.
 
@@ -52,9 +54,7 @@ The following steps are used:
 
 		1. 	The model is pushed to Playground repo
 
-		2.	Model namespace is set to PLAYGROUND-NAMESPACE
-
-		3.	Model version is set to PLAYGROUND-VERSION
+		2.	Model version is set to PLAYGROUND-VERSION
 
 2.	**Review Board**: A Model proponent promotes the Playground model to the Review Board
 
@@ -64,7 +64,7 @@ The following steps are used:
 
 	2.	Actions:
 
-		1.	The secretary initiates a process form (see appendix 1) for the model
+		1.	The secretary initiates a process form (see appendix 1) for the model and puts it in the `under-review` folder
 
 		2.	The Review board reviews the model according to review guidelines (see appendix 2) and the secretary updates the process form accordingly. There are two possible outcomes based on Review Board consensus at the end of the review period:
 
@@ -72,7 +72,7 @@ The following steps are used:
 
 			2.	The model and its form are sent back to proponent for update
 
-		3.	If a Community Last Call is decided, the secretary handles the process with announcement, comment handling, and communication of outcome
+		3.	If a Community Last Call is decided, the secretary handles the process with announcement, comment handling, and communication of outcome. Also, the secretary moves the process form from `under-review` to `in-last-call` folders. 
 
 	3.	Possible outcomes:
 
@@ -94,13 +94,27 @@ The following steps are used:
 
 		2.	Model version is set to ADOPTED-VERSION
 
-		3.	Secretary adds model to Adopted Models repository
+		3.	Secretary adds the model to Adopted Models repository
 
 		4.	Model change control as assigned to Review board
 
-		5.	Secretary archives process form
+		5.	Secretary archives the process form in the `adopted` folder
 
 ## A1. Appendix 1 OneDM Model adoption process form
+
+A process form is created for each model that is promoted to the review board, and is intended to record the dicsussions and decisions during model review. 
+
+A process form can be in one of four states, which correspond to the subdirectories of the [`adopted`](https://github.com/one-data-model/adoption) repo:
+
+- `under-review` The model has been submitted and is under review by the review board.
+
+- `in-last-call` The review board has completed its processing and is asking for community comments.
+
+- `adopted` The model is adopted as a OneDM model; the process form is maintained to document the process leading to this state.
+
+- `retired` The submission has been retired (possibly after submitting related models, which should be mentioned on the retired process form).
+
+The process form: 
 
 	# Basic info (filled in by contributor)
 
